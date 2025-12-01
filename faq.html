@@ -3,34 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - 40. Geburtstag</title>
+    <title>FAQ - 41. Geburtstag</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
+        :root {
+            --bg: #0f0b1f;
+            --card: rgba(255, 255, 255, 0.08);
+            --text: #f8f5ff;
+            --muted: #d2c9ff;
+            --accent: #ff7ac3;
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
         }
-        
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            background: radial-gradient(circle at 10% 10%, rgba(255, 122, 195, 0.25), transparent 30%),
+                        radial-gradient(circle at 80% 20%, rgba(124, 242, 212, 0.2), transparent 25%),
+                        var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 32px 14px 64px;
+        }
+
         .container {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 960px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(255, 122, 195, 0.15), rgba(124, 242, 212, 0.12));
+            border-radius: 26px;
+            padding: 36px 32px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(6px);
         }
 
         h1 {
-            color: #333;
             text-align: center;
-            margin-bottom: 30px;
+            margin: 0 0 18px;
+            font-size: 2.2rem;
+            color: #fff;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 0 0 26px;
+            color: var(--muted);
+            font-size: 1.05rem;
         }
 
         .faq-item {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
+            margin-bottom: 24px;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .faq-item:last-child {
@@ -38,55 +66,80 @@
         }
 
         .question {
-            font-weight: 600;
-            color: #2c3e50;
-            font-size: 1.2em;
-            margin-bottom: 10px;
+            font-weight: 700;
+            color: #fff;
+            font-size: 1.15rem;
+            margin-bottom: 8px;
         }
 
         .answer {
-            color: #444;
-            padding-left: 20px;
+            color: var(--muted);
+            padding-left: 4px;
+            margin: 0;
         }
 
         .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            color: #007bff;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 24px;
+            padding: 12px 16px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
             text-decoration: none;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .back-link:hover {
-            text-decoration: underline;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (max-width: 680px) {
+            body {
+                padding: 20px 12px 48px;
+            }
+
+            .container {
+                padding: 26px 22px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Häufig gestellte Fragen</h1>
+        <h1>FAQ zur Geburtstagsfeier</h1>
+        <p class="subtitle">Alle Infos für den 05.01.2026 auf einen Blick</p>
 
         <div class="faq-item">
-            <div class="question">🕒 Wann fängt es an?</div>
-            <div class="answer">
-                Die Feier beginnt ab ca. 18 Uhr. Du kannst aber gerne auch früher oder später kommen - sprich mich einfach direkt an, dann können wir das individuell abstimmen.
-            </div>
+            <div class="question">🕒 Wann geht's los?</div>
+            <p class="answer">Ab 18:00 Uhr ist die Tür offen. Komm entspannt, wie es für dich passt.</p>
         </div>
 
         <div class="faq-item">
-            <div class="question">🎁 Wie sieht's mit Geschenken aus?</div>
-            <div class="answer">
-                Deine Anwesenheit ist das schönste Geschenk! Falls du mir dennoch etwas schenken möchtest, freue ich mich natürlich darüber - aber bitte fühl dich nicht verpflichtet.
-            </div>
+            <div class="question">🎁 Brauche ich ein Geschenk?</div>
+            <p class="answer">Nein, deine Gesellschaft ist das Beste! Wenn du trotzdem etwas mitbringen willst, freue ich mich, fühl dich aber nicht verpflichtet.</p>
         </div>
 
         <div class="faq-item">
-            <div class="question">🛏️ Gibt es Übernachtungsmöglichkeiten?</div>
-            <div class="answer">
-                Wir haben zwar begrenzten Platz, können aber einigen Gästen eine Übernachtungsmöglichkeit anbieten. Da ich das mit der Frau des Hauses abstimmen muss, melde dich bitte direkt bei mir, wenn du einen Schlafplatz brauchst.
-            </div>
+            <div class="question">🛏️ Kann ich über Nacht bleiben?</div>
+            <p class="answer">Ein paar Schlafplätze sind vorhanden. Schreib mir kurz, dann reserviere ich dir einen.</p>
         </div>
 
-        <a href="/40/" class="back-link">← Zurück zur Einladung</a>
+        <div class="faq-item">
+            <div class="question">🚗 Wo kann ich parken?</div>
+            <p class="answer">Rund um den Gertrude-Wondrack-Platz gibt es Kurzparkzone. Öffis sind am entspanntesten – ansonsten findest du meist in den Seitenstraßen einen Platz.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">📞 Wie erreiche ich dich am schnellsten?</div>
+            <p class="answer">Am besten telefonisch unter <a href="tel:+436646634686" style="color: var(--accent); text-decoration: none; font-weight: 600;">+43 664 663 46 86</a>. WhatsApp oder Signal sind auch ok.</p>
+        </div>
+
+        <a href="index.html" class="back-link">← Zurück zur Einladung</a>
     </div>
 </body>
 </html>
