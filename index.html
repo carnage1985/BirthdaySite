@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40. Geburtstag</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .invitation-text {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        .faq-button {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .faq-button a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #f8f9fa;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 2px solid #ddd;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .faq-button a:hover {
+            background-color: #e9ecef;
+            border-color: #adb5bd;
+            transform: translateY(-2px);
+        }
+
+        .details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .map-container {
+            height: 400px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .form-container {
+            margin-top: 30px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .form-container iframe {
+            width: 100%;
+            border: none;
+        }
+
+        .info-update {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .directions {
+            margin: 30px 0;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .directions h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .directions-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .direction-step {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .direction-step img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .direction-step p {
+            font-size: 1.1em;
+            margin: 0;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 680px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .form-container iframe {
+                width: 100%;
+            }
+
+            .directions {
+                padding: 15px;
+                margin: 20px 0;
+            }
+
+            .directions h2 {
+                font-size: 1.3em;
+            }
+
+            .directions-steps {
+                gap: 25px;
+            }
+
+            .direction-step {
+                gap: 12px;
+            }
+
+            .direction-step p {
+                font-size: 1em;
+            }
+
+            .details, .invitation-text {
+                padding: 15px;
+                font-size: 1em;
+            }
+
+            .faq-button a {
+                padding: 10px 20px;
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Einladung zu meinem 40. Geburtstag</h1>
+        
+        <div class="invitation-text">
+            Liebe Freunde,<br><br>
+            ich möchte euch herzlich zu meinem 40. Geburtstag einladen!<br>
+        	Es gibt Pizza und Alkohol!<br>
+            Partner sind natürlich herzlich willkommen!
+        </div>
+
+        <div class="details">
+            <p><strong>Datum:</strong> 05. Januar 2025</p>
+            <p><strong>Uhrzeit:</strong> ab ca. 18:00 Uhr</p>
+            <p><strong>Ort:</strong> Gertrude-Wondrack-Platz 5, 1120 Wien</p>
+            <p><strong>Kontakt für Rückfragen:</strong> <a href="tel:+436646634686" style="color: #333; text-decoration: none; border-bottom: 1px dashed #666;">+43 664 663 46 86</a></p>
+        </div>
+
+        <div class="directions">
+            <h2>🚶 Wegbeschreibung von der U-Bahn</h2>
+            <div class="directions-steps">
+                <div class="direction-step">
+                    <img src="1.png" alt="Weg von der U-Bahn">
+                    <p>Schritt 1: Der Weg von der U-Bahn</p>
+                </div>
+                <div class="direction-step">
+                    <img src="2.png" alt="Weg weiter">
+                    <p>Schritt 2: Der weitere Weg</p>
+                </div>
+                <div class="direction-step">
+                    <img src="3.png" alt="Weg zum Gebäude">
+                    <p>Schritt 3: Der Weg zum Gebäude</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-button">
+            <a href="faq.html">📋 Häufig gestellte Fragen (FAQ)</a>
+        </div>
+
+        <div class="map-container">
+            <iframe
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.8876111977887!2d16.417661776891882!3d48.17530667132456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da9f6978b9c3d%3A0x1e4b37f428f3b0f!2sGertrude-Wondrack-Platz%205%2C%201120%20Wien!5e0!3m2!1sde!2sat!4v1709484444316!5m2!1sde!2sat"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="form-container">
+            <h2>Rückmeldung</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 15px;"><strong>Bitte um Rückmeldung bis 4.1. früh</strong> (für die Organisation des Essens)</p>
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeNLg9Tb3zVXLWvNQx2MisK2Xj0kfnLAWe4zEc53xW9iH-N0Q/viewform?embedded=true" 
+                width="100%" 
+                height="1070" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading…
+            </iframe>
+        </div>
+
+        <div class="info-update">
+            Diese Seite wird bei Bedarf mit weiteren Informationen aktualisiert. 
+            Bei Fragen werden die Antworten hier für alle sichtbar gemacht.
+        </div>
+    </div>
+</body>
+</html>
